@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>var straysheep</title>
+    <link>http://straysheep3.github.io/</link>
+    <description>Recent content on var straysheep</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 12 Jun 2016 01:27:57 +0900</lastBuildDate>
+    <atom:link href="http://straysheep3.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Hugoでgh-pagesにブログを作ってみた</title>
+      <link>http://straysheep3.github.io/post/hugo-gh-pages-blog-create/</link>
+      <pubDate>Sun, 12 Jun 2016 01:27:57 +0900</pubDate>
+      
+      <guid>http://straysheep3.github.io/post/hugo-gh-pages-blog-create/</guid>
+      <description>
+
+&lt;p&gt;ここのところ、かなり詰めて勉強していたのですが休養も必要だと思い今日は休もう。
+と、決めて本を読んでいたら&amp;hellip;&lt;/p&gt;
+
+&lt;p&gt;「学習には、アウトプットが重要だよ。」&lt;/p&gt;
+
+&lt;p&gt;と書かれていて、「あァ、しっかりアウトプットしないとあかんなァ。」と思い結局、一日中Hugoと戯れてしまいました。&lt;/p&gt;
+
+&lt;p&gt;その際、エンジニアを目指すものらしく、gh-pagesにブログを公開するのは良いアピールになると思いアウトプット用に
+Hugoを使ってgh-pagesに公開してみました。&lt;/p&gt;
+
+&lt;p&gt;結構、詰まったので詰まった点をアウトプットしていきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;まずは-hugoをインストールしてみる:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;まずは、Hugoをインストールしてみる。&lt;/h2&gt;
+
+&lt;p&gt;僕は、macを使用しているのでHomebrewでインストールしました。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ brew install hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Hugoをインストールします。&lt;/p&gt;
+
+&lt;p&gt;次に、ブログ用にインストールするので、適時、作業用のディレクトリに移動してサイトを作成します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo new site ブログ名
+例えば、hugo new site blog など
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;こうすると、サイトの基盤ができあがります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;blog
+├── archetypes
+├── config.toml
+├── content
+├── data
+├── layouts
+└── static
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;もし、こういった階層構造を確認したいのであれば、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ brew install tree
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;してください。&lt;strong&gt;tree&lt;/strong&gt;コマンドが使えるようになります。&lt;/p&gt;
+
+&lt;h2 id=&#34;テーマを入れてみる:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;テーマを入れてみる。&lt;/h2&gt;
+
+&lt;p&gt;基盤ができたので、テーマをいれてみます。
+いきなり、テーマを作成する猛者の方もいらっしゃると思いますが、まずは既存のテーマで挙動などを確認してみると良いと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;Hugo themes site&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;こちらに色んなテーマがあるので、お好きなテーマを選択してください。&lt;/p&gt;
+
+&lt;p&gt;テーマを選択すると、おそらく&lt;strong&gt;Installation&lt;/strong&gt;という項目があると思います。&lt;/p&gt;
+
+&lt;p&gt;その通りに実行します。&lt;/p&gt;
+
+&lt;p&gt;Polymerというテーマであれば、
+&lt;strong&gt;(あ、hugo new site ブログ名 で作成したブログ名に、cdで移動しておいてください。)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ mkdir themes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;treeコマンドで確認すると、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;.
+├── archetypes
+├── config.toml
+├── content
+├── data
+├── layouts
+├── static
+└── themes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;このようになっているはずです。&lt;/p&gt;
+
+&lt;p&gt;それでは、themesフォルダに移動して、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd themes
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git clone https://github.com/pdevty/polymer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;してください。themesの中にテーマがクローンされます。&lt;/p&gt;
+
+&lt;h2 id=&#34;ローカルサーバで確認してみる:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;ローカルサーバで確認してみる&lt;/h2&gt;
+
+&lt;p&gt;それでは、ローカルのサーバで確認してみましょう。&lt;/p&gt;
+
+&lt;p&gt;まずは、themesの１つ上の階層に戻って、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd ..
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo server -t polymer
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;として、&lt;a href=&#34;http://localhost:1313にアクセスしてみてください。&#34;&gt;http://localhost:1313にアクセスしてみてください。&lt;/a&gt;
+サイトが表示されたでしょうか？&lt;/p&gt;
+
+&lt;p&gt;テーマの設定は完了です。&lt;/p&gt;
+
+&lt;p&gt;ちなみに、&lt;strong&gt;-t&lt;/strong&gt;オプションは、テーマ指定のオプションです。&lt;/p&gt;
+
+&lt;p&gt;僕が現時点での簡単な理解をしているオプションは、&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;コマンド&lt;/th&gt;
+&lt;th&gt;意味&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;-t&lt;/td&gt;
+&lt;td&gt;テーマの指定&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;-w&lt;/td&gt;
+&lt;td&gt;ウォッチコマンド?変更した際にオートリロードされます。&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;-D&lt;/td&gt;
+&lt;td&gt;下書き(draft)を表示させる&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;動作確認をしてみましょう。&lt;/p&gt;
+
+&lt;p&gt;試しに、下書き記事を作成します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo new post/test.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;こうすると、&lt;strong&gt;content/post/test.md&lt;/strong&gt;というファイルができます。&lt;/p&gt;
+
+&lt;p&gt;なかを見てみると、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;+++
+date = &amp;quot;2016-06-12T02:00:33+09:00&amp;quot;
+draft = true
+title = &amp;quot;test&amp;quot;
+
++++
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;こんな感じになっていると思います。&lt;/p&gt;
+
+&lt;p&gt;draft = true&lt;/p&gt;
+
+&lt;p&gt;なので、下書き状態ですよ。ということですね。&lt;/p&gt;
+
+&lt;p&gt;それでは、ローカルサーバで確認してみます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo server -t polymer -D
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;-D オプションで、ドラフトも表示させるようにします。-D は大文字なので注意。&lt;/p&gt;
+
+&lt;p&gt;実行すると、記事が表示されたのが確認できたと思います。&lt;/p&gt;
+
+&lt;p&gt;基本は、このような感じです。&lt;/p&gt;
+
+&lt;p&gt;それでは、github-pagesでも確認できるようにしてみます。&lt;/p&gt;
+
+&lt;h1 id=&#34;github-pagesに反映させる:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;github-pagesに反映させる。&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;github-pagesは更新に時間がかかる事もあります。&lt;/strong&gt;
+更新されなければ少し待ってみましょう。1分以内。&lt;/p&gt;
+
+&lt;p&gt;なには、ともあれGithubにリポジトリを作成しましょう。&lt;/p&gt;
+
+&lt;p&gt;僕は、とりあえず確認したかったのでシンプルに１つのリポジトリで進めました。&lt;/p&gt;
+
+&lt;p&gt;リポジトリを新規作成してください。&lt;/p&gt;
+
+&lt;p&gt;リポジトリ名は、&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;あなたのユーザ名.github.io&lt;/strong&gt;です。&lt;/p&gt;
+
+&lt;p&gt;リポジトリ名だけ、入力したら作成でOKです。&lt;/p&gt;
+
+&lt;p&gt;一度、githubから離れて、再びファイルを編集します。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;config.toml&lt;/strong&gt;というファイルがあると思います。&lt;/p&gt;
+
+&lt;p&gt;こちらを編集します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;# github-pagesでのURL
+baseurl = &amp;quot;http://あなたの名前.github.io/&amp;quot;
+
+# 言語の設定
+languageCode = &amp;quot;ja&amp;quot;
+
+# ブログのタイトル
+title = &amp;quot;My New Hugo Site&amp;quot;
+
+# パスの指定。これをしないとcssがうまく反映されません。
+canonifyurls = true
+
+# テーマの名前
+theme = &amp;quot;polymer&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;strong&gt;このファイルは地味に重要です。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;注意点&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;baseurlの最後の/を忘れずに！！絶対パスがおかしくなって、cssが反映されないです&lt;/li&gt;
+&lt;li&gt;cononifyurls trueで絶対パス指定です。&lt;/li&gt;
+&lt;li&gt;theme名を打ち込んでおいてください。hugoコマンドで-tオプションを指定しなくてよくなります。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;ここまで、できましたらhugoコマンドを実行します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;-t オプションは、先ほどのconfig.tomlでテーマを指定しているので不要です。&lt;/p&gt;
+
+&lt;p&gt;hugoコマンドを実行すると、&lt;strong&gt;public&lt;/strong&gt;というフォルダができたと思います。&lt;/p&gt;
+
+&lt;p&gt;こちらが公開用のフォルダとなります。&lt;/p&gt;
+
+&lt;p&gt;それでは、cd で publicに移動します。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ cd public
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;ここで、githubのリモートリポジトリを登録します。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;public内でリモートを登録してください&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;git remote add origin git@github.com:あなたの名前/あなたの名前.github.io.git&lt;/p&gt;
+
+&lt;p&gt;登録できたら、以下のコマンドを打ち込みます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git add .
+$ git commit -am &amp;quot;Initial commit&amp;quot;
+$ git push -u origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;これで、リモートにリポジトリがアップされたはずです。&lt;/p&gt;
+
+&lt;p&gt;では、http://あなたの名前.github.ioにアクセスしてみましょう。&lt;/p&gt;
+
+&lt;p&gt;リポジトリのsettingsの中ほどにリンクがあるのでそちらをクリックでも良いです。
+ここが、OKであればリンクが表示されているはずです。&lt;/p&gt;
+
+&lt;p&gt;どうでしょう？表示されましたか？&lt;/p&gt;
+
+&lt;p&gt;表示されていればここまでは、OKです。&lt;/p&gt;
+
+&lt;h1 id=&#34;マークダウンを作ったり-アップしたり:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;マークダウンを作ったり、アップしたり&lt;/h1&gt;
+
+&lt;p&gt;ここからが少しややこしかったのですが、マークダウンを作成した際に&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo new post/test.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;としたと思います。
+現在は、draft = trueなのでpublicには反映されていません。&lt;/p&gt;
+
+&lt;p&gt;では、draft = trueを削除してみます。&lt;/p&gt;
+
+&lt;p&gt;content/post/test.md の &lt;strong&gt;draft = true&lt;/strong&gt; を削除して下さい。&lt;/p&gt;
+
+&lt;p&gt;そして、hugoします。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;すると、publicフォルダの中にpostというフォルダが作成されたと思います。
+さらにその中は、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;post
+├── index.html
+├── index.xml
+├── page
+│   └── 1
+│       └── index.html
+└── test
+    └── index.html
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;このようになっていると思います。&lt;/p&gt;
+
+&lt;p&gt;post/test/index.htmlがマークダウンで作成したものの出力結果となります。&lt;/p&gt;
+
+&lt;p&gt;それでは、publicフォルダに移動して、git pushしてみましょう。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ git push
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;先ほど、git push -u origin master で-uオプションをしているので、pushだけでよいです。
+不安な方は、&lt;strong&gt;git push origin master&lt;/strong&gt;してください。&lt;/p&gt;
+
+&lt;p&gt;これで、github-pagesにもtest.mdの内容が表示されたはずです。&lt;/p&gt;
+
+&lt;p&gt;「よし、わかった。次の記事を作ろう。もう余裕や。」&lt;/p&gt;
+
+&lt;p&gt;と思っていた時期がわたしにもありました。&lt;/p&gt;
+
+&lt;p&gt;実際に新しく作成してpushしても反映されませんｗ&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;注意点&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;public/postは、記事を作成したり更新したら&lt;strong&gt;削除&lt;/strong&gt;しないといけません。&lt;/p&gt;
+
+&lt;p&gt;これがややこしい。&lt;/p&gt;
+
+&lt;p&gt;つまり、publicフォルダに入って、&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ rm -rf post
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;をしないといけません。&lt;/p&gt;
+
+&lt;p&gt;実際に、コマンドを打ってください。
+現在は、publicフォルダにいるはずです。&lt;/p&gt;
+
+&lt;p&gt;削除できたら、&lt;strong&gt;１つ上の階層に戻って&lt;/strong&gt;
+これを忘れてよくエラーで怒られます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo new post/sample.md
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;をして、新しい記事を登録してください。&lt;/p&gt;
+
+&lt;p&gt;そして、hugo。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;成功の結果&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;0 draft content
+0 future content
+2 pages created
+2 paginator pages created
+0 tags created
+0 categories created
+in 41 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;先ほどの、test.mdとsample.mdの文で2つの記事が作成されました。&lt;/p&gt;
+
+&lt;p&gt;publicのpostの中にも二つの記事が作成されております。&lt;/p&gt;
+
+&lt;p&gt;では、cdでpublicに入って、git pushしてください。&lt;/p&gt;
+
+&lt;p&gt;gh-pagesでも反映されていると思います。&lt;/p&gt;
+
+&lt;h1 id=&#34;deploy-shを作成して手間を減らす:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;deploy.shを作成して手間を減らす。&lt;/h1&gt;
+
+&lt;p&gt;サイトの一番上の階層に&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;deploy.sh&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;というファイルを作成してください。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# !/bin/bash
+
+echo -e &amp;quot;\033[0;32mDeploying updates to GitHub...\033[0m&amp;quot;
+
+# Build the project.
+hugo
+
+cd public
+
+# Add changes to git.
+git add .
+
+# Commit changes.
+msg=&amp;quot;rebuilding site `date`&amp;quot;
+if [ $# -eq 1 ]
+  then msg=&amp;quot;$1&amp;quot;
+fi
+git commit -m &amp;quot;$msg&amp;quot;
+
+# Push source and build repos.
+git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;そして、上記のコードをコピペしてください。&lt;/p&gt;
+
+&lt;p&gt;こうすることによって、記事を作成した後に、ターミナルで&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# $ ./deploy.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;と打ち込むだけで、リモートまでpushできます。&lt;/p&gt;
+
+&lt;p&gt;くれぐれも、publicの中のpostを削除するのをお忘れなく!!&lt;/p&gt;
+
+&lt;p&gt;もっと、効率的にできると思うのですが、何卒未熟者ですので
+Hugoをもっと理解したらどんどんアウトプットしていこうと思います。&lt;/p&gt;
+
+&lt;p&gt;最後に、おさらいです。
+ここまで、できている状態で&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;rm -rf post でpostを削除する。(public内)&lt;/li&gt;
+&lt;li&gt;hugo new post/◯◯.mdを作成する。(publicより１つ上の階層)&lt;/li&gt;
+&lt;li&gt;./deploy.shを実行する。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;以上です。それでは、また:)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
