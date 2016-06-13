@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>var straysheep</title>
-    <link>http://straysheep3.github.io/</link>
-    <description>Recent content on var straysheep</description>
+    <title>Posts on var straysheep</title>
+    <link>http://straysheep3.github.io/post/</link>
+    <description>Recent content in Posts on var straysheep</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 13 Jun 2016 23:38:57 +0900</lastBuildDate>
-    <atom:link href="http://straysheep3.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://straysheep3.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>mokumoku会のすゝめ</title>
