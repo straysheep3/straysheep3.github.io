@@ -6,8 +6,69 @@
     <description>Recent content on var straysheep</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 12 Jun 2016 01:27:57 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jun 2016 23:38:57 +0900</lastBuildDate>
     <atom:link href="http://straysheep3.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>mokumoku会のすゝめ</title>
+      <link>http://straysheep3.github.io/post/mokumoku/</link>
+      <pubDate>Mon, 13 Jun 2016 23:38:57 +0900</pubDate>
+      
+      <guid>http://straysheep3.github.io/post/mokumoku/</guid>
+      <description>
+
+&lt;h2 id=&#34;本日初めてmokumoku会に参加しました:f10875960ba81f0b165d513a60b94612&#34;&gt;本日初めてmokumoku会に参加しました。&lt;/h2&gt;
+
+&lt;p&gt;mokumoku会って何をするものなのか、どんな人が来るのか。
+まったく知らない状態で参加しましたが、結果として非常に良かったです。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;mokumoku会には積極的に参加することをオススメします。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;約2時間のmokumoku会でしたが、2時間とうのは丁度良いです。
+人間がきっちり集中できる時間ですし、2時間で目標を持って作業するというのは効率的です。&lt;/p&gt;
+
+&lt;h2 id=&#34;mokumoku会は何をするところ:f10875960ba81f0b165d513a60b94612&#34;&gt;mokumoku会は何をするところ？&lt;/h2&gt;
+
+&lt;p&gt;mokumoku会は、会によってもまちまちかもしれませんが、基本的に目標を持ってモクモク作業するところです。&lt;/p&gt;
+
+&lt;p&gt;僕が参加したところでは、&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;自己紹介、する事を述べる&lt;/li&gt;
+&lt;li&gt;モクモク作業する(2時間)&lt;/li&gt;
+&lt;li&gt;できたものを簡単に説明する&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;という形式でした。また、自己紹介の時にmokumoku会の参加は初です。というと、他の勉強会の紹介をしてくれたり
+非常にフレンドリーでした。&lt;/p&gt;
+
+&lt;h2 id=&#34;何をモクモク作ったか:f10875960ba81f0b165d513a60b94612&#34;&gt;何をモクモク作ったか？&lt;/h2&gt;
+
+&lt;p&gt;僕は、記事が投稿できるアプリを制作しました。
+人によっては、サーバー周りだったり、記事生成だったりと様々です。&lt;/p&gt;
+
+&lt;p&gt;また、本当にRubyやRuby on Railsが初めての方には「これをやったらいいよー」などアドバイスをくれるそうなので臆せずに参加してみてはいかがですか。&lt;/p&gt;
+
+&lt;h2 id=&#34;僕がオススメするポイント:f10875960ba81f0b165d513a60b94612&#34;&gt;僕がオススメするポイント&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;環境を変えて学習できる&lt;/li&gt;
+&lt;li&gt;何をするか宣言してからモクモクするので、目標が明確で進めやすい&lt;/li&gt;
+&lt;li&gt;友達が増える(と思うw)&lt;/li&gt;
+&lt;li&gt;刺激をうける。=&amp;gt; やる気がでる&lt;/li&gt;
+&lt;li&gt;情報が増える&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;などなどです。個人的には、新しく覚えたことを試したり(わからなければ、すごい人に聞いてみる)、覚えた技術の復習につかえる。と思います。
+僕が作成した、記事投稿アプリも覚えた技術の復習として作成しました。
+2時間では、完成しなかったのですが自分の実力を確認できるし、あたらしい目標も見えてきます。&lt;/p&gt;
+
+&lt;h2 id=&#34;最後に:f10875960ba81f0b165d513a60b94612&#34;&gt;最後に&lt;/h2&gt;
+
+&lt;p&gt;mokumoku会は、学びたい人にとってすごくオススメです。無料で参加できるなら尚です。
+普段の学習と、外部からの刺激を受けてよりよいエンジニアライフを送っていきたいのでした。では。:)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Hugoでgh-pagesにブログを作ってみた</title>
