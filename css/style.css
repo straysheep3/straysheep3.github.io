@@ -58,6 +58,19 @@ body {
   text-decoration: none;
 }
 
+.navbar-default .navbar-toggle {
+  border-color: #fdf6e3;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fdf6e3;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #00a3af;
+    border-color: #00a3af;
+}
+
 
 /*==================================
 2. プロフィールの設定
