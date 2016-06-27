@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Gh Pages on var straysheep</title>
+    <title>Gh Pages on var StraySheep</title>
     <link>http://straysheep3.github.io/tags/gh-pages/</link>
-    <description>Recent content in Gh Pages on var straysheep</description>
+    <description>Recent content in Gh Pages on var StraySheep</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 12 Jun 2016 01:27:57 +0900</lastBuildDate>
@@ -19,6 +19,8 @@
 
 &lt;p&gt;ここのところ、かなり詰めて勉強していたのですが休養も必要だと思い今日は休もう。
 と、決めて本を読んでいたら&amp;hellip;&lt;/p&gt;
+
+&lt;!-- more --&gt;
 
 &lt;p&gt;「学習には、アウトプットが重要だよ。」&lt;/p&gt;
 
@@ -213,7 +215,7 @@ title = &amp;quot;test&amp;quot;
 
 &lt;p&gt;こちらを編集します。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-toml&#34;&gt;# github-pagesでのURL
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# github-pagesでのURL
 baseurl = &amp;quot;http://あなたの名前.github.io/&amp;quot;
 
 # 言語の設定

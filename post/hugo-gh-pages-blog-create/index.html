@@ -1,326 +1,140 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <title>Hugoでgh-pagesにブログを作ってみた &middot; var straysheep</title>
-    <meta name="generator" content="Hugo 0.15" />
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="author" content="straysheep">
-    
-      <meta name="description" content="静的サイトジェネレータHugoを使ってgh-pagesにブログを公開する手順をまとめました。Hugoの導入からgh-pagesへアップし、テーマを設定します。">
-    
-    
-    <link rel="icon" href="http://straysheep3.github.io/favicon.ico">
-    <link rel="apple-touch-icon" href="http://straysheep3.github.io/apple-touch-icon.png" />
-    <link rel="stylesheet" href="http://straysheep3.github.io/css/style.css">
-    <link rel="stylesheet" href="http://straysheep3.github.io/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://straysheep3.github.io/css/monokai.css">
-    <link rel="stylesheet" href="http://straysheep3.github.io/fancybox/jquery.fancybox.css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <meta property="og:title" content="Hugoでgh-pagesにブログを作ってみた" />
-<meta property="og:description" content="静的サイトジェネレータHugoを使ってgh-pagesにブログを公開する手順をまとめました。Hugoの導入からgh-pagesへアップし、テーマを設定します。" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="http://straysheep3.github.io/post/hugo-gh-pages-blog-create/" />
+  <title>Hugoでgh-pagesにブログを作ってみた &middot; var StraySheep</title>
+  <meta charset="UTF-8">
 
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<meta property="og:updated_time" content="2016-06-12T01:27:57&#43;09:00"/>
+  
+  <meta name="author" content="Stray Sheep">
 
+  
+  
+    <meta name="description" content="静的サイトジェネレータHugoを使ってgh-pagesにブログを公開する手順をまとめました。Hugoの導入からgh-pagesへアップし、テーマを設定します。">
+  
 
+  
+  
 
+  
+  <link rel="icon" href="http://straysheep3.github.io/favicon.ico">
+  <link rel="apple-touch-icon" href="http://straysheep3.github.io/apple-touch-icon.png" />
 
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/solarized_dark.min.css">
 
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+  
+  <link rel="stylesheet" href="http://straysheep3.github.io//css/style.css">
 
-
-
-
-    
-    
-<meta itemprop="name" content="Hugoでgh-pagesにブログを作ってみた">
-<meta itemprop="description" content="静的サイトジェネレータHugoを使ってgh-pagesにブログを公開する手順をまとめました。Hugoの導入からgh-pagesへアップし、テーマを設定します。">
-
-
-<meta itemprop="dateModified" content="2016-06-12T01:27:57&#43;09:00" />
-<meta itemprop="wordCount" content="3551">
-
-
-
-<meta itemprop="keywords" content="mokumoku,web,gh-pages,hugo," />
-
-    
-
-  <meta name="twitter:card" content="summary"/>
-
-
-
-<meta name="twitter:title" content="Hugoでgh-pagesにブログを作ってみた"/>
-<meta name="twitter:description" content="静的サイトジェネレータHugoを使ってgh-pagesにブログを公開する手順をまとめました。Hugoの導入からgh-pagesへアップし、テーマを設定します。"/>
-<meta name="twitter:site" content="@var_straysheep"/>
-
-
-    
-
-    
 </head>
 <body>
-<div class="container">
 
-
-<div id="container">
-	<header id="header">
-  <div id="header-main" class="header-inner">
-    <div class="outer">
-      <a href="http://straysheep3.github.io/" id="logo"><i class="logo" style="background-image: url('http://straysheep3.github.io/css/images/logo.png')"></i><span class="site-title">var straysheep</span></a>
-      <nav id="main-nav">
-          
-          
-          <a class="main-nav-link" href="http://straysheep3.github.io/">Home</a>
-          
-          
-          
-          
-          
-          
-
-          
-
-          
-          
-          
-          
-          <a class="main-nav-link" href="http://straysheep3.github.io/tags/">Tags</a>
-          
-          
-          
-          <a class="main-nav-link" href="http://straysheep3.github.io/categories/">Categories</a>
-          
-          
-      </nav>
-        <nav id="sub-nav">
-          <div class="profile" id="profile-nav">
-            <a id="profile-anchor" href="javascript:;"><img class="avatar" src="http://straysheep3.github.io/css/images/sunny.jpg"><i class="fa fa-caret-down"></i></a>
-          </div>
-        </nav>
-        <div id="search-form-wrap">
-          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-              <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
-              <button type="submit" class="search-form-submit">
-              </button>
-              <input type="hidden" name="q" value="site:http://straysheep3.github.io/">
-         </form>
-        </div>
+  <header class="header">
+  <nav class="navbar navbar-default container-fluid" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://straysheep3.github.io/"><img src="http://straysheep3.github.io//images/varstraysheep-logo.png" alt="" width="100" ></a>
     </div>
-  </div>
-  <div id="main-nav-mobile" class="header-sub header-inner">
-    <table class="menu outer">
-      <tbody>
-          <tr>
-          
-          
-          <td><a class="main-nav-link" href="http://straysheep3.github.io/">Home</a></td>
-          
-          
-          
-          
-          
-          
 
-          
-
-          
-          
-          
-          
-          <td><a class="main-nav-link" href="http://straysheep3.github.io/tags/">Tags</a></td>
-          
-          
-          
-          <td><a class="main-nav-link" href="http://straysheep3.github.io/categories/">Categories</a></td>
-          
-          
-          <td>
-          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form">
-          <input type="search" name="q" results="0" class="search-form-input" placeholder="Search">
-          <input type="hidden" name="q" value="site:http://straysheep3.github.io/">
-          </form>
-        </td>
-      </tr>
-      </tbody>
-    </table>
-  </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right header-nav-link">
+        <li><a href="#"><i class="fa fa-home"></i> HOME</a></li>
+        <li><a href="#"><i class="fa fa-desktop"> WEB</i></a></li>
+        <li><a href="#"><i class="fa fa-tags"></i> TAGS</a></li>
+      </ul>
+    </div>
+  </nav>
 </header>
 
-   	
-   	<div class="outer">
-   		
-	    <aside id="profile">
-  <div class="inner profile-inner">
-    <div class="base-info profile-block">
-      <img id="avatar" src="http://straysheep3.github.io/css/images/sunny.jpg">
-      <h2 id="name">straysheep</h2>
-      <h3 id="title">たこ焼き - プログラム - たこやき</h3>
-      <span id="location"><i class="fa fa-map-marker"></i>大阪</span>
+  <main class="container-fluid">
+    <section class="row">
+
       
-          <a id="follow" href="https://github.com/straysheep3">
-              Follow
-          </a>
-      
-    </div>
-    <div class="article-info profile-block">
-      <div class="article-info-block">
-        2
-        <span>Posts</span>
-      </div>
-      <div class="article-info-block">
-        
-          2
-          
-        <span>
-            Tags
-        </span>
-      </div>
-    </div>
-    <div class="contact-info profile-block">
-      <table class="contact-list">
-        <tr>
-          
-<td><a href="//github.com/straysheep3" target="_blank" title="GitHub"><i class="fa fa-github"></i></a></td>
-
-
-
-<td><a href="//bitbucket.com/straysheep" target="_blank" title="Bitbucket"><i class="fa fa-bitbucket"></i></a></td>
-
-
-
-
-
-<td><a href="//codepen.io/straysheep-kage3" target="_blank" title="CodePen"><i class="fa fa-codepen"></i></a></td>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<td><a href="//instagram.com/sheep33930" target="_blank" title="Instagram"><i class="fa fa-instagram"></i></a></td>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<td><a href="//pinterest.com/straysheep3" target="_blank" title="Pinterest"><i class="fa fa-pinterest"></i></a></td>
-
-
-
-
-
-
-
-<td><a href="//twitter.com/var_straysheep" target="_blank" title="Twitter"><i class="fa fa-twitter"></i></a></td>
-
-
-          <td><a href="" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
-        </tr>
-      </table>
-    </div>
-  </div>
-</aside>
-
-	    
-
-	    
-<section id="main">
-
-    <article id="page-undefined" class="article article-type-page" itemscope="" itemprop="blogPost">
-        <div class="article-inner">
+      <div class="col-md-9">
+        <section>
+  <article itemscope="" itemprop="blogPost">
+    <div class="panel">
+      <div class="panel-heading">
+        <div class="row">
+          <div class="col-md-5 text-center">
             
-                
-                <img src="http://straysheep3.github.io/banners/hugo-github.png" class="article-banner">
-                
+              
+                <img src="http://straysheep3.github.io/images/hugo-github.png" width="300">
+              
             
+          </div>
+          <div class="col-md-7">
+            <ul class="list-inline">
+              <li>
+                <i class="fa fa-calendar"></i>
+                <time datetime="2016-06-12 01:27:57 &#43;0900 JST" itemprop="datePublished">2016-06-12</time>
+              </li>
+              
+              
+                
+                
+                  <li>
+                    <i class="fa fa-folder"></i>
+                    
+                    <a class="label category-web" href="http://straysheep3.github.io/categories/web">web</a>
+                    
+                    
+                  </li>
+                
+              
 
-            <header class="article-header">
-    <a href="http://straysheep3.github.io/post/hugo-gh-pages-blog-create/">
-    <h1 class="article-title" itemprop="name">
-        Hugoでgh-pagesにブログを作ってみた
-    </h1>
-    </a>
-    <div class="article-meta">
-        <div class="article-date">
-            <i class="fa fa-calendar"></i>
-            <time datetime="2016-06-12 01:27:57 &#43;0900 JST" itemprop="datePublished">2016-06-12</time>
-            &middot;
+              
+              
+                
+                
+                  <li>
+                    <i class="fa fa-tags"></i>
+                    
+                    <a class="label tag-hugo" href="http://straysheep3.github.io/tags/hugo">hugo</a>
+                    &middot;
+                    
+                    <a class="label tag-gh-pages" href="http://straysheep3.github.io/tags/gh-pages">gh-pages</a>
+                    
+                    
+                  </li>
+                
+              
+            </ul>
+            <h1>タイトル</h1>
+            <hr>
+            <ul class="list-inline">
+              <li><i class="fa fa-twitter fa-2x"></i></li>
+              <li><i class="fa fa-codepen"></i></li>
+              <li><i class="fa fa-github-alt"></i></li>
+              <li></li>
+              <li></li>
+            </ul>
             3551
-            words
+            文字
             &middot;
             8
-            minute read
+            分で読めます
+          </div>
         </div>
-
+      </div>
+      <hr>
+      <div class="panel-body article-entry" itemprop="articleBody">
         
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-folder"></i>
-                
-                <a class="article-category-link" href="http://straysheep3.github.io/categories/web">web</a>
-                
-                
-            </div>
-            
-        
-
-        
-            
-            
-            <div class="article-category">
-                <i class="fa fa-tags"></i>
-                
-                <a class="article-category-link" href="http://straysheep3.github.io/tags/hugo">hugo</a>
-                &middot;
-                
-                <a class="article-category-link" href="http://straysheep3.github.io/tags/gh-pages">gh-pages</a>
-                
-                
-            </div>
-            
-        
-    </div>
-</header>
-
-            <div class="article-entry" itemprop="articleBody">
-                
 
 <p>ここのところ、かなり詰めて勉強していたのですが休養も必要だと思い今日は休もう。
 と、決めて本を読んでいたら&hellip;</p>
+
+<!-- more -->
 
 <p>「学習には、アウトプットが重要だよ。」</p>
 
@@ -515,7 +329,7 @@ title = &quot;test&quot;
 
 <p>こちらを編集します。</p>
 
-<pre><code class="language-toml"># github-pagesでのURL
+<pre><code class="language-bash"># github-pagesでのURL
 baseurl = &quot;http://あなたの名前.github.io/&quot;
 
 # 言語の設定
@@ -737,41 +551,36 @@ Hugoをもっと理解したらどんどんアウトプットしていこうと�
 
 <p>以上です。それでは、また:)</p>
 
-            </div>
-            <footer class="article-footer">
-    <a data-url="http://straysheep3.github.io/post/hugo-gh-pages-blog-create/" data-id="cf6e4dec1f121389d1c523681cbfad0f" class="article-share-link">
-        Share
-    </a>
-    
-    <a href="http://straysheep3.github.io/post/hugo-gh-pages-blog-create//#disqus_thread" class="article-comment-link">
-        Comments
-    </a>
-    
-</footer>
+      </div>
+    </div>
+    <div>
+      
+<nav class="clearfix">
+  
+  <a href="http://straysheep3.github.io/post/mokumoku/" >
+    <strong class="btn btn-readMore">
+      <i class="fa fa-chevron-circle-left"></i>
+      &ensp;
+      次の記事
+      &ensp;
+      <i class="fa fa-terminal"></i>
+      mokumoku会のすゝめ
+    </strong>
+  </a>
+  
 
-        </div>
+  
 
-        
-<nav id="article-nav">
-    
-
-    
-    <a href="http://straysheep3.github.io/post/mokumoku/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">
-          Newer
-      </strong>
-      <div class="article-nav-title">mokumoku会のすゝめ</div>
-    </a>
-    
 </nav>
 
 
-    </article>
+    </div>
+  </article>
 
-    
-    <section id="comments">
-        <div id="disqus_thread">
-            <div id="disqus_thread"></div>
+  
+  <section id="comments">
+    <div id="disqus_thread">
+      <div id="disqus_thread"></div>
 <script type="text/javascript">
     var disqus_shortname = 'varstraysheep';
     var disqus_identifier = 'http:\/\/straysheep3.github.io\/post\/hugo-gh-pages-blog-create\/';
@@ -786,185 +595,175 @@ Hugoをもっと理解したらどんどんアウトプットしていこうと�
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </div>
+  </section>
+  
+
+      </div>
+      
+
+      <div class="col-md-3">
+        
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">ステンバーイ</h3>
+          </div>
+          <div class="panel-body">
+            <img class="img-responsive" src="http://straysheep3.github.io//images/baracktocat.jpg" alt="" />
+          </div>
         </div>
-    </section>
-    
-</section>
+        
 
-
-	    
-	    <aside id="sidebar">
-    
-<div class="widget-wrap">
-    <h3 class="widget-title">
-        Recents
+        
+        
+  <div class="recent-box">
+    <h3 style="font-size: 1.5rem;">
+      <i class="fa fa-pencil"></i> 最近の記事
     </h3>
-    <div class="widget">
-        <ul id="recent-post">
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="http://straysheep3.github.io/post/mokumoku/" class="thumbnail">
-                    
-                        
-                        <span style="background-image:url(http://straysheep3.github.io/banners/placeholder.png)" alt="Hugoでgh-pagesにブログを作ってみた" class="thumbnail-image"></span>
-                        
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    <p class="item-category">
-                        <a class="article-category-link" href="http://straysheep3.github.io/categories/mokumoku">
-                        mokumoku
-                        </a>
-                    </p>
-                    
-                    <p class="item-title"><a href="http://straysheep3.github.io/post/mokumoku/" class="title">mokumoku会のすゝめ</a></p>
-                    <p class="item-date">
-                        <time datetime="2016-06-13 23:38:57 &#43;0900 JST" itemprop="datePublished">2016-06-13</time>
-                    </p>
-                </div>
-            </li>
-            
-            <li>
-                <div class="item-thumbnail">
-                    <a href="http://straysheep3.github.io/post/hugo-gh-pages-blog-create/" class="thumbnail">
-                    
-                        
-                        <span style="background-image:url(http://straysheep3.github.io/banners/hugo-github.png)" alt="Hugoでgh-pagesにブログを作ってみた" class="thumbnail-image"></span>
-                        
-                    
-                    </a>
-                </div>
-                <div class="item-inner">
-                    
-                    <p class="item-category">
-                        <a class="article-category-link" href="http://straysheep3.github.io/categories/web">
-                        web
-                        </a>
-                    </p>
-                    
-                    <p class="item-title"><a href="http://straysheep3.github.io/post/hugo-gh-pages-blog-create/" class="title">Hugoでgh-pagesにブログを作ってみた</a></p>
-                    <p class="item-date">
-                        <time datetime="2016-06-12 01:27:57 &#43;0900 JST" itemprop="datePublished">2016-06-12</time>
-                    </p>
-                </div>
-            </li>
-            
-        </ul>
-    </div>
-</div>
 
-
-    
-
-
-<div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-        <ul class="category-list">
-            
-            <li class="category-list-item">
-                <a class="category-list-link" href="http://straysheep3.github.io/categories/mokumoku">
-                    mokumoku
-                </a>
-                <span class="category-list-count">1</span>
-            </li>
-            
-            <li class="category-list-item">
-                <a class="category-list-link" href="http://straysheep3.github.io/categories/web">
+    <ul class="list-group">
+      
+      <li class="list-group-item recent-box">
+        <div class="media">
+          <div class="media-left">
+            <a href="http://straysheep3.github.io/post/mokumoku/">
+              
+                
+                  <span class="recent-article-img" style="background-image:url(http://straysheep3.github.io/images/mokumoku.png)" alt="Hugoでgh-pagesにブログを作ってみた"></span>
+                
+              
+            </a>
+          </div>
+          <div class="media-body">
+            <ul class="list-inline">
+              <li>
+                <i class="fa fa-calendar"></i>
+                <time datetime="2016-06-13 23:38:57 &#43;0900 JST" itemprop="datePublished">2016-06-13</time>
+              </li>
+              
+                <li>
+                  <i class="fa fa-folder"></i>
+                  <a href="http://straysheep3.github.io/categories/web">
                     web
-                </a>
-                <span class="category-list-count">1</span>
-            </li>
-            
-        </ul>
-    </div>
-</div>
+                  </a>
+                </li>
+              
+            </ul>
+            <a href="http://straysheep3.github.io/post/mokumoku/">mokumoku会のすゝめ</a>
+          </div>
+        </div>
+      </li>
+      
+      <li class="list-group-item recent-box">
+        <div class="media">
+          <div class="media-left">
+            <a href="http://straysheep3.github.io/post/hugo-gh-pages-blog-create/">
+              
+                
+                  <span class="recent-article-img" style="background-image:url(http://straysheep3.github.io/images/hugo-github.png)" alt="Hugoでgh-pagesにブログを作ってみた"></span>
+                
+              
+            </a>
+          </div>
+          <div class="media-body">
+            <ul class="list-inline">
+              <li>
+                <i class="fa fa-calendar"></i>
+                <time datetime="2016-06-12 01:27:57 &#43;0900 JST" itemprop="datePublished">2016-06-12</time>
+              </li>
+              
+                <li>
+                  <i class="fa fa-folder"></i>
+                  <a href="http://straysheep3.github.io/categories/web">
+                    web
+                  </a>
+                </li>
+              
+            </ul>
+            <a href="http://straysheep3.github.io/post/hugo-gh-pages-blog-create/">Hugoでgh-pagesにブログを作ってみた</a>
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
 
 
+        
 
+        
+          
+  
     
-
-
-<div class="widget-wrap">
-    <h3 class="widget-title">
-        Tags
-    </h3>
-    <div class="widget">
-        <ul class="category-list">
-            
-            <li class="category-list-item">
-                <a class="category-list-link" href="http://straysheep3.github.io/tags/gh-pages">
-                    gh-pages
-                </a>
-                <span class="category-list-count">1</span>
-            </li>
-            
-            <li class="category-list-item">
-                <a class="category-list-link" href="http://straysheep3.github.io/tags/hugo">
-                    hugo
-                </a>
-                <span class="category-list-count">1</span>
-            </li>
-            
-        </ul>
-    </div>
-</div>
-
-
-
+      <div>
+        <h3 style="font-size: 1.5rem;">
+          <i class="fa fa-tags"></i>
+          Tags
+        </h3>
+        <div>
+          
+            <a class="label tag-gh-pages" href="http://straysheep3.github.io/tags/gh-pages" style="font-size: 12px;">gh-pages</a>
+          
+            <a class="label tag-hugo" href="http://straysheep3.github.io/tags/hugo" style="font-size: 12px;">hugo</a>
+          
+            <a class="label tag-mokumoku" href="http://straysheep3.github.io/tags/mokumoku" style="font-size: 12px;">mokumoku</a>
+          
+        </div>
+      </div>
     
+  
 
 
-<div class="widget-wrap">
-    <h3 class="widget-title">
-        Tag cloud
-    </h3>
-    <div class="widget tagcloud">
         
-        <a href="http://straysheep3.github.io/tags/gh-pages" style="font-size: 12px;">gh-pages</a>
+        <hr>
         
-        <a href="http://straysheep3.github.io/tags/hugo" style="font-size: 12px;">hugo</a>
-        
-    </div>
-</div>
-
-
-
-
-    <div id="toTop" class="fa fa-chevron-up"></div>
+        <aside class="panel panel-default">
+  <div class="profile"></div>
+  <div class="profile-body text-center">
+    <img src="http://straysheep3.github.io/images/me.jpg" class="profile-img" alt="" />
+    <h5>Stray Sheep</h5>
+    <p>とりあえず、テーマを作成中。まだ未完なのでSEO的にもやばいかもですｗ</p>
+    <ul class="list-inline">
+      <li><i class="fa fa-twitter fa-2x"></i></li>
+      <li><i class="fa fa-codepen fa-2x"></i></li>
+      <li><i class="fa fa-instagram fa-2x"></i></li>
+      <li><i class="fa fa-github-alt fa-2x"></i></li>
+      <li></li>
+    </ul>
+  </div>
 </aside>
 
-	    
-	</div>
-</div>
-
-<footer id="footer">
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2016
-      
-    </div>
+<aside class="panel panel-default">
+  <div class="panel-body text-center">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eam si varietatem diceres, intellegerem, ut etiam non dicente te intellego; Duo Reges: constructio interrete. Quicquid porro animo cernimus, id omne oritur a sensibus; Quis hoc dicit? An est aliquid per se ipsum flagitiosum, etiamsi nulla comitetur infamia? Superiores tres erant, quae esse possent, quarum est una sola defensa, eaque vehementer. Ut necesse sit omnium rerum, quae natura vigeant, similem esse finem, non eundem. Sed tempus est, si videtur, et recta quidem ad me. Sed quot homines, tot sententiae; Ut optime, secundum naturam affectum esse possit. Quodsi ipsam honestatem undique pertectam atque absolutam.
+    <hr>
+    Negat esse eam, inquit, propter se expetendam. Quod iam a me expectare noli. Nec vero alia sunt quaerenda contra Carneadeam illam sententiam. An eiusdem modi? Nunc vides, quid faciat. Non risu potius quam oratione eiciendum? Videmus igitur ut conquiescere ne infantes quidem possint. Sin laboramus, quis est, qui alienae modum statuat industriae?</p>
   </div>
+</aside>
+
+        
+
+      </div>
+      
+    </section>
+  </main>
+
+  <footer class="footer text-center">
+  <small>©straysheep</small>
 </footer>
 
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="http://straysheep3.github.io/fancybox/jquery.fancybox.pack.js"></script>
-<script src="http://straysheep3.github.io/js/script.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<!-- MathJax -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']]}
-  });
-</script>
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<script src="https://use.fontawesome.com/f156e52422.js"></script>
 
 </body>
 </html>
