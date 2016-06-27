@@ -161,7 +161,7 @@ body {
 
 .footer {
   padding: 15px 0;
-  background: linear-gradient(190deg, rgba(22, 74, 132, .8), rgba(0, 163, 175, .8));
+  background: linear-gradient(360deg, rgba(22, 74, 132, .8), rgba(0, 163, 175, .8));
   color: #fdf6e3;
 }
 
@@ -213,7 +213,7 @@ body {
 }
 
 #comments {
-  background-color: #002b36;
+  background: linear-gradient(180deg, rgba(22, 74, 132, .8), rgba(0, 163, 175, .8));
   padding: 15px;
   margin: 30px 0;
 }
