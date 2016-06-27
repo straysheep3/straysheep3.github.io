@@ -25,7 +25,7 @@
 &lt;p&gt;と書かれていて、「あァ、しっかりアウトプットしないとあかんなァ。」と思い結局、一日中Hugoと戯れてしまいました。&lt;/p&gt;
 
 &lt;p&gt;その際、エンジニアを目指すものらしく、gh-pagesにブログを公開するのは良いアピールになると思いアウトプット用に
-Hugoを使ってgh-pagesに公開してみました。&lt;/p&gt;
+Hugoを使ってgh-pagesにブログを公開してみました。&lt;/p&gt;
 
 &lt;p&gt;結構、詰まったので詰まった点をアウトプットしていきます。&lt;/p&gt;
 
@@ -279,7 +279,7 @@ $ git push -u origin master
 
 &lt;p&gt;表示されていればここまでは、OKです。&lt;/p&gt;
 
-&lt;h1 id=&#34;マークダウンを作ったり-アップしたり:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;マークダウンを作ったり、アップしたり&lt;/h1&gt;
+&lt;h2 id=&#34;マークダウンを作ったり-アップしたり:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;マークダウンを作ったり、アップしたり&lt;/h2&gt;
 
 &lt;p&gt;ここからが少しややこしかったのですが、マークダウンを作成した際に&lt;/p&gt;
 
@@ -379,7 +379,7 @@ in 41 ms
 
 &lt;p&gt;gh-pagesでも反映されていると思います。&lt;/p&gt;
 
-&lt;h1 id=&#34;deploy-shを作成して手間を減らす:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;deploy.shを作成して手間を減らす。&lt;/h1&gt;
+&lt;h2 id=&#34;deploy-shを作成して手間を減らす:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;deploy.shを作成して手間を減らす。&lt;/h2&gt;
 
 &lt;p&gt;サイトの一番上の階層に&lt;/p&gt;
 
@@ -414,7 +414,7 @@ git push origin master
 
 &lt;p&gt;こうすることによって、記事を作成した後に、ターミナルで&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;# $ ./deploy.sh
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ ./deploy.sh
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;と打ち込むだけで、リモートまでpushできます。&lt;/p&gt;

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on var straysheep</title>
-    <link>http://straysheep3.github.io/tags/hugo/</link>
-    <description>Recent content in Hugo on var straysheep</description>
+    <title>Web on var straysheep</title>
+    <link>http://straysheep3.github.io/categories/web/</link>
+    <description>Recent content in Web on var straysheep</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 12 Jun 2016 01:27:57 +0900</lastBuildDate>
-    <atom:link href="http://straysheep3.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://straysheep3.github.io/categories/web/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Hugoでgh-pagesにブログを作ってみた</title>
