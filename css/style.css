@@ -1,14 +1,20 @@
 @charset "UTF-8";
 
+/*==================================
+0. 基本的な設定
+====================================*/
+.label {
+  vertical-align: 22%;
+}
+
 body {
   background: #f3f3f3;
-  font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif !important;
+  font-family: 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif !important;
 }
 
-.header h1 {
-  margin: 0;
-}
-
+/*==================================
+1. ヘッダーナビ
+====================================*/
 .navbar {
   margin-bottom: 35px;
   border: none;
@@ -18,10 +24,6 @@ body {
 .navbar-default{
   background: #164a84;
   border-bottom: 5px solid #00a3af;
-}
-
-.navbar-default .navbar-brand {
-    padding-top: 12px;
 }
 
 .navbar-default .header-nav-link > li > a {
@@ -37,11 +39,25 @@ body {
   opacity: .8;
 }
 
-.panel-default {
-  border: none;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+.navbar-brand {
+  margin: 0;
 }
 
+.navbar-brand > a {
+  color: #fdf6e3;
+  transition: all .3s ease;
+}
+
+.navbar-brand > a:hover {
+  opacity: .8;
+  transition: all .3s ease;
+  text-decoration: none;
+}
+
+
+/*==================================
+2. プロフィールの設定
+====================================*/
 .profile {
   height: 150px;
   background-size: cover;
@@ -64,6 +80,15 @@ body {
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+
+
+
+.panel-default {
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
 
 .articles img {
   border-radius: 4px 0 0 0;
@@ -93,18 +118,12 @@ body {
   margin-bottom: 20px;
 }
 
-
-.inner {
-  padding: 0 10px;
-}
-
-
 .panel-primary {
   border: none;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
-.panel-primary>.panel-heading {
+.panel-primary >.panel-heading {
     color: #fff;
     background-color: #164a84;
     border-color: #164a84;
@@ -112,18 +131,6 @@ body {
 
 .panel-primary > .panel-body {
   padding: 0;
-}
-
-.panel-success>.panel-heading {
-    color: white;
-    background-color: #00a3af;
-    border-color: transparent;;
-}
-
-.panel-warning>.panel-heading {
-    color: white;
-    background-color: #f08300;
-    border-color: #f08300;
 }
 
 .article-title {
@@ -142,23 +149,19 @@ body {
 }
 
 
-.label {
-  vertical-align: 22%;
-}
-
 /*カテゴリーカラー*/
 
 .category-web {
-  background-color: #00a3af;
+  background-color: #f08300;
 }
 
 /*タグカラー*/
 .tag-hugo {
-  background-color: #89c3eb;
+  background-color: #e7609e;
 }
 
 .tag-gh-pages {
-  background-color: #89c3eb;
+  background-color: #95949a;
 }
 
 .tag-mokumoku {
@@ -215,6 +218,66 @@ body {
 .article-entry pre code {
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
 }
+
+/*==================================
+ソーシャルカラー
+====================================*/
+.social .fa-github {
+  transition: all .3s ease;
+}
+
+.fa-github:hover {
+  color: #9ea1a3;
+  transition: all .3s ease;
+}
+
+.social .fa-codepen {
+  transition: all .3s ease;
+}
+
+.fa-codepen:hover {
+  color: #180614;
+  transition: all .3s ease;
+}
+
+.social .fa-instagram {
+  transition: all .3s ease;
+}
+
+.fa-instagram:hover {
+  color: #65318e;
+  transition: all .3s ease;
+}
+
+.social .fa-pinterest {
+  transition: all .3s ease;
+}
+
+.fa-pinterest:hover {
+  color: #c9171e;
+  transition: all .3s ease;
+}
+
+.social .fa-twitter {
+  transition: all .3s ease;
+}
+
+.fa-twitter:hover {
+  color: #2ca9e1;
+  transition: all .3s ease;
+}
+
+.fa-rss {
+  transition: all .3s ease;
+}
+
+.fa-rss:hover {
+  color: #007b43;
+  transition: all .3s ease;
+}
+
+
+
 
 @media (min-width: 992px) {
   .container-fluid {
