@@ -43,6 +43,10 @@ body {
   margin: 0;
 }
 
+.navbar-brand span {
+  color: #cb4b16;
+}
+
 .navbar-brand > a {
   color: #fdf6e3;
   transition: all .3s ease;
