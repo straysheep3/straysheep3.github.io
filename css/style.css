@@ -5,6 +5,10 @@ body {
   font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif !important;
 }
 
+.header h1 {
+  margin: 0;
+}
+
 .navbar {
   margin-bottom: 35px;
   border: none;
