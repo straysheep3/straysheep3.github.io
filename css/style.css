@@ -9,7 +9,13 @@
 
 body {
   background: #f3f3f3;
-  font-family: 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif !important;
+  font-family: 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+  font-size: 16px;
+
+}
+
+#article-content p {
+  margin-bottom: 30px;
 }
 
 /*==================================
