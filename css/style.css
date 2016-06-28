@@ -22,7 +22,14 @@ body {
   border-bottom: 2px solid #00a3af;
   padding-bottom: 10px;
   margin-bottom: 30px;
+  font-size: 24px;
 }
+
+#article-content h2:before {
+  content: "\f0c3 ";
+  font-family: "fontawesome";
+}
+
 
 /*==================================
 1. ヘッダーナビ
