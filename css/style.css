@@ -18,6 +18,12 @@ body {
   margin-bottom: 30px;
 }
 
+#article-content h2 {
+  border-bottom: 2px solid #00a3af;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+}
+
 /*==================================
 1. ヘッダーナビ
 ====================================*/
@@ -236,10 +242,12 @@ body {
   line-height: 22.400000000000002px;
   border-radius: 0;
   margin-bottom: 15px;
+  font-size: 16px;
 }
 
 .article-entry pre code {
   font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  color: #fdf6e3;
 }
 
 /*==================================
