@@ -159,7 +159,8 @@ Hugoを使ってgh-pagesにブログを公開してみました。&lt;/p&gt;
 &lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;$ hugo new post/test.md
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;こうすると、&lt;strong&gt;content/post/test.md&lt;/strong&gt;というファイルができます。&lt;/p&gt;
+&lt;p&gt;こうすると、&lt;strong&gt;content/post/test.md&lt;/strong&gt;
+というファイルができます。&lt;/p&gt;
 
 &lt;p&gt;なかを見てみると、&lt;/p&gt;
 
@@ -190,7 +191,7 @@ title = &amp;quot;test&amp;quot;
 
 &lt;p&gt;それでは、github-pagesでも確認できるようにしてみます。&lt;/p&gt;
 
-&lt;h1 id=&#34;github-pagesに反映させる:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;github-pagesに反映させる。&lt;/h1&gt;
+&lt;h2 id=&#34;github-pagesに反映させる:cf6e4dec1f121389d1c523681cbfad0f&#34;&gt;github-pagesに反映させる。&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;github-pagesは更新に時間がかかる事もあります。&lt;/strong&gt;
 更新されなければ少し待ってみましょう。1分以内。&lt;/p&gt;
