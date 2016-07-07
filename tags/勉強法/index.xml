@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>勉強法 on var StraySheep</title>
+    <link>http://straysheep3.github.io/tags/%E5%8B%89%E5%BC%B7%E6%B3%95/</link>
+    <description>Recent content in 勉強法 on var StraySheep</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 07 Jul 2016 19:51:01 +0900</lastBuildDate>
+    <atom:link href="http://straysheep3.github.io/tags/%E5%8B%89%E5%BC%B7%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>プログラミングの効果的な学習法？</title>
+      <link>http://straysheep3.github.io/post/how-to-study-programing/</link>
+      <pubDate>Thu, 07 Jul 2016 19:51:01 +0900</pubDate>
+      
+      <guid>http://straysheep3.github.io/post/how-to-study-programing/</guid>
+      <description>
+
+&lt;p&gt;プログラミングの学習で必ず出てくる写経。最初は本当に何もわからなくて、とりあえず写経してみる。ということはよくあると思います。&lt;/p&gt;
+
+&lt;p&gt;ですが、写経しまくってもなかなか効果がでない。&lt;/p&gt;
+
+&lt;p&gt;そこで、効果的な学習方法がないか模索しました。
+その中で見つけた2冊を紹介します。&lt;/p&gt;
+
+&lt;h2 id=&#34;1冊目-リファクタリング-ウェットウェア:c7520db0d4b07e0612c99d1821d42b0c&#34;&gt;1冊目 リファクタリング・ウェットウェア&lt;/h2&gt;
+
+&lt;p class=&#34;text-center&#34;&gt;
+&lt;a href=&#34;http://www.amazon.co.jp/gp/product/4873114039/ref=as_li_qf_sp_asin_il?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=4873114039&amp;linkCode=as2&amp;tag=straysheep0e-22&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=4873114039&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=straysheep0e-22&#34; &gt;&lt;/a&gt;&lt;img src=&#34;http://ir-jp.amazon-adsystem.com/e/ir?t=straysheep0e-22&amp;l=as2&amp;o=9&amp;a=4873114039&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;達人プログラマーの著者 Andy Huntさんが書いた書籍です。
+僕は、まだ「達人プログラマー」自体は読んでいないのですが、ぜひ読んで見たいと思った一冊です。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;初心者と達人の違いとは&lt;/li&gt;
+&lt;li&gt;脳の構造的にどう学習するのがよいか&lt;/li&gt;
+&lt;li&gt;効果的に学習するには意識的に学習する&lt;/li&gt;
+&lt;li&gt;経験を積み重ねていく方法&lt;/li&gt;
+&lt;li&gt;集中するにはどうすればよいか&lt;/li&gt;
+&lt;li&gt;達人になった後のこと&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;といった事などが書かれています。&lt;/p&gt;
+
+&lt;p&gt;僕自身、おもしろいなと思ったのは「モーニングノート」&lt;/p&gt;
+
+&lt;p&gt;朝起きたらすぐに、思ったことをノートに書きなぐる。&lt;/p&gt;
+
+&lt;p&gt;この行動により無意識の状態を引き出しやすくする。という方法です。&lt;/p&gt;
+
+&lt;p&gt;何か、急に問題の解決方法が閃いたり、いいアイデアが浮かんだりしますよね？&lt;/p&gt;
+
+&lt;p&gt;あのような、体験は脳のどの部分が制御していて、どうすればより引き出せるか。といった事が2章に書かれています。&lt;/p&gt;
+
+&lt;h2 id=&#34;で-写経は:c7520db0d4b07e0612c99d1821d42b0c&#34;&gt;で、写経は？&lt;/h2&gt;
+
+&lt;p&gt;写経についても、記述がなされていて&lt;/p&gt;
+
+&lt;p&gt;学習で最も効率が悪いのは、テキストによる学習。つまり、本による学習。&lt;/p&gt;
+
+&lt;p&gt;と書かれています。&lt;/p&gt;
+
+&lt;p&gt;では、どうすれば本による学習の効率を高められるか、写経の効果を高められるかと言うことです。&lt;/p&gt;
+
+&lt;p&gt;ポイントは、「意識的に」本を読むこと、写経することです。
+「んなこと、やっとるわい！」と言われそうですが、メモの取り方、読書の仕方など様々な手法が紹介されています。&lt;/p&gt;
+
+&lt;p&gt;さらに、&lt;strong&gt;勉強の方法のタイプ&lt;/strong&gt;
+についても書かれており、人によって効果的な学習方法が違うため、タイプにあった学習方法をしようと言うことです。&lt;/p&gt;
+
+&lt;p&gt;まるで、占いみたいな感じなのですが、僕は「身体感覚型」でしたｗ&lt;/p&gt;
+
+&lt;p&gt;で、このタイプの効果的な学習方法を解釈して、
+動画での学習、テスト駆動型学習が、いいなと思って実践しています。&lt;/p&gt;
+
+&lt;p&gt;テスト駆動型学習については、コラムに書かれているのですが知識が定着しないのは、このせいかもしれない。と考えさせられた名コラムであると思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ1:c7520db0d4b07e0612c99d1821d42b0c&#34;&gt;まとめ1&lt;/h2&gt;
+
+&lt;p&gt;プログラマーの思考法と学習法とありますが、何かを学ぼうとする人であれば対象になる本だと思います。
+具体的なコードが出てくるわけではなく、考え方やこんな方法もあるよ。と、様々な手法を根拠から説明してくれます。&lt;/p&gt;
+
+&lt;p&gt;個人的には、何回も読み込んで体に染み込ませたい良書だと思います。
+もちろん、何事にも例外はつきものなので合わない方もいらっしゃると思います。&lt;/p&gt;
+
+&lt;p&gt;ですが、いいと思った部分だけでも実践してみて自分なりの学習法を作り上げる手助けになると思います。&lt;/p&gt;
+
+&lt;p&gt;一冊目は以上です。&lt;/p&gt;
+
+&lt;h2 id=&#34;2冊目-web-db-press-vol-80:c7520db0d4b07e0612c99d1821d42b0c&#34;&gt;2冊目 WEB+DB PRESS vol.80&lt;/h2&gt;
+
+&lt;p class=&#34;text-center&#34;&gt;
+&lt;a  href=&#34;http://www.amazon.co.jp/gp/product/4774163988/ref=as_li_tf_il?ie=UTF8&amp;camp=247&amp;creative=1211&amp;creativeASIN=4774163988&amp;linkCode=as2&amp;tag=straysheep0e-22&#34;&gt;&lt;img border=&#34;0&#34; src=&#34;http://ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&amp;ASIN=4774163988&amp;Format=_SL250_&amp;ID=AsinImage&amp;MarketPlace=JP&amp;ServiceVersion=20070822&amp;WS=1&amp;tag=straysheep0e-22&#34; &gt;&lt;/a&gt;&lt;img src=&#34;http://ir-jp.amazon-adsystem.com/e/ir?t=straysheep0e-22&amp;l=as2&amp;o=9&amp;a=4774163988&#34; width=&#34;1&#34; height=&#34;1&#34; border=&#34;0&#34; alt=&#34;&#34; style=&#34;border:none !important; margin:0px !important;&#34; /&gt;
+&lt;/p&gt;
+
+&lt;p&gt;僕の好きな技術評論社から出ている雑誌です。&lt;/p&gt;
+
+&lt;p&gt;１つの特集として「エンジニアの学び方」という企画があるのですが、そちらを読みました。&lt;/p&gt;
+
+&lt;p&gt;こちらも&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;効率的に学ぶには&lt;/li&gt;
+&lt;li&gt;最初の一歩をどう踏み出すか&lt;/li&gt;
+&lt;li&gt;どうやって深く理解するか&lt;/li&gt;
+&lt;li&gt;何を学ぶか、何を作るか&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;といった事が、書かれています。&lt;/p&gt;
+
+&lt;p&gt;リファクタリング・ウェットウェアを読んでからの方が自分の考え、勉強法も見えてくるので良いかもしれません。&lt;/p&gt;
+
+&lt;p&gt;学びのフェーズについてや、意見の相違がおきる原因などが書かれています。&lt;/p&gt;
+
+&lt;p&gt;リファクタリング・ウェットウェアに記述されていないポイントもあるので組み合わせるのが良いかと。&lt;/p&gt;
+
+&lt;p&gt;個人的には、理解の軸が図で表されている事もあってかイメージがしやすかったですね。
+自分が今どのあたりにいて、これからどうしていくかという検討をつけやすいと思います。&lt;/p&gt;
+
+&lt;h2 id=&#34;まとめ2:c7520db0d4b07e0612c99d1821d42b0c&#34;&gt;まとめ2&lt;/h2&gt;
+
+&lt;p&gt;WEB+DB の紹介、短っ！！&lt;/p&gt;
+
+&lt;p&gt;というところですが、オススメしたいのはリファクタリング・ウェットウェアなのでかなり省略しましたｗ&lt;/p&gt;
+
+&lt;h2 id=&#34;おわりに:c7520db0d4b07e0612c99d1821d42b0c&#34;&gt;おわりに&lt;/h2&gt;
+
+&lt;p&gt;定期的に読みたい本に久々に出会ったな。という感じです。
+リーダブルコードも頑張って読んでいますが、読書の仕方が変わりそうな一冊です。&lt;/p&gt;
+
+&lt;p&gt;そして、読書法を実践して「達人プログラマー」に挑もうと思います。&lt;/p&gt;
+
+&lt;p&gt;では:)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
