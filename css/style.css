@@ -191,6 +191,10 @@ body {
   background-color: #f08300;
 }
 
+.category-API {
+  background-color: #ee827c;
+}
+
 /*タグカラー*/
 .tag-hugo {
   background-color: #e7609e;
@@ -206,6 +210,10 @@ body {
 
 .tag-study {
   background-color: #006e54;
+}
+
+.tag-niconico {
+  background-color: #1f3134;
 }
 
 .recent-box {
